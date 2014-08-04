@@ -1,0 +1,13 @@
+---
+layout: default
+---
+
+<h4>A blog by <a href="/">Michael</a> about culture, technology, and games.</h4>
+<h1>Posts</h1>
+<br/>
+{% for post in site.posts %}
+<p>
+  <time>{{ post.date | date: "%b %-d, %Y" }}</time>:
+  <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+</p>
+{% endfor %}

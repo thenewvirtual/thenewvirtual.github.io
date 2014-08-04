@@ -1,0 +1,12 @@
+# Site settings
+title: The New Virtual
+email: humanoidanalog@gmail.com
+description: "A blog by Michael about culture, technology, and games."
+baseurl: "/blog"
+url: "http://distransient.ddns.net"
+twitter_username: distransient
+github_username: mkgh
+
+# Build settings
+markdown: redcarpet
+extensions: [fenced_code_blocks]
