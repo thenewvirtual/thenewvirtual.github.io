@@ -1,0 +1,216 @@
+/* copy right wtvr */
+
+::selection { background: #c44; color: #ddd; }
+::-moz-selection { background: #c44; color: #ddd; }
+
+*, *:before, *:after {
+}
+
+html {
+  position: relative;
+
+  background: #ddd;
+  color: #222;
+
+  font-family: 'Source Serif Pro', serif; 
+  font-size: 1.4em;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  text-transform: none;
+}
+
+body {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 1em;
+
+  max-width: 30em; 
+}
+
+/* Generic content reset and styling */
+hr { border: 0; border-bottom: 2px solid #555; -moz-box-sizing: content-box; box-sizing: content-box; height: 0; }
+h1,h2,h3,h4,h5,h6 { margin: 2em 0 0; }
+h1 { font-size: 2em; padding-bottom: .2em; margin-bottom: -1.2em; border-bottom: 2px solid #555; }
+p { margin: 3em 0; text-align: justify; }
+small { font-size: .8em; }
+b, strong { font-weight: bold; }
+article, figure, figcaption { display: block; }
+figure { margin: 1em 0; }
+figcaption { color: #555; font-style: italic; margin-top: -.5em; }
+sub, sup { font-size: .75em; line-height: 0; position: relative; vertical-align: baseline; }
+sup { top: -0.5em; }
+sub { bottom: -0.25em; }
+
+a { 
+  color: #e66; 
+  opacity: .8;
+  background: transparent;
+
+  text-decoration: none; 
+  outline: 0; 
+
+  -webkit-transition: opacity 220ms ease;
+  -moz-transition: opacity 220ms ease;
+  -o-transition: opacity 220ms ease;
+  transition: opacity 220ms ease;
+}
+a:hover, a:active, a:focus { opacity: 1; }
+
+img { 
+  display: block; 
+  width: 100%; 
+  margin: 1em 0;
+  -webkit-border-radius: .3em;
+  -moz-border-radius: .3em;
+  border-radius: .3em;
+  border: 0;
+}
+
+blockquote { 
+  display: block;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-left: 1em;
+  margin: 1em 0 1em 1em;
+
+  border-left: 2px solid #555; 
+}
+
+/* Topbar logo */
+a.logo {
+  background: #444 no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: #ddd;
+
+  font-size: 2em; 
+
+  position: relative;
+  display: block;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: .8em .6em .01em;
+
+  -webkit-border-top-left-radius: .3em;
+  -moz-border-top-left-radius: .3em;
+  border-top-left-radius: .3em;
+
+  -webkit-border-top-right-radius: .3em;
+  -moz-border-top-right-radius: .3em;
+  border-top-right-radius: .3em;
+}
+
+a.logo:before {
+  content: 'The New Virtual';
+  background: #444;
+  opacity: .8;
+
+  display: block;
+  position: absolute;
+  top: 0; left:0;
+  width: 100%;
+  height: 100%;
+
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: .8em .6em .01em;
+
+  -webkit-border-top-left-radius: .3em;
+  -moz-border-top-left-radius: .3em;
+  border-top-left-radius: .3em;
+
+  -webkit-border-top-right-radius: .3em;
+  -moz-border-top-right-radius: .3em;
+  border-top-right-radius: .3em;
+
+  -webkit-transition: opacity 220ms ease, background-color 220ms ease;
+  -moz-transition: opacity 220ms ease, background-color 220ms ease;
+  -o-transition: opacity 220ms ease, background-color 220ms ease;
+  transition: opacity 220ms ease, background-color 220ms ease;
+}
+
+a.logo:hover:before { opacity: 1; background: #d66; }
+
+/* Post headers */
+header { 
+  background: #444 no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: #ddd;
+
+  position: absolute; 
+  left: 0; 
+  width: 100%;
+  height: 23em; 
+
+  display: flex; 
+  align-items: flex-end;
+  justify-content: center;
+}
+header h1 { border-bottom-color: #ddd; }
+header small.attr a { color: #ddd; }
+header small.attr { opacity: .8; }
+header small.attr:hover { opacity: 1; }
+header small.attr a:hover { color: #f88; }
+header > span.container {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 1em;
+
+  max-width: 30em; 
+}
+
+/* extra space from header absolute positioning */
+article:before { content: " "; display: block; margin-top: 26em; }
+
+code, pre { font-family: 'inconsolata', monospace; font-size: .9em; }
+
+/* Code highlighting */
+.highlight  { 
+  color: #ddd;
+  background: #444; 
+
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 1em;
+  margin: 2em 0;
+
+  -webkit-border-radius: .3em;
+  -moz-border-radius: .3em;
+  border-radius: .3em;
+}
+
+.highlight pre { margin: 0; }
+.highlight pre code { 
+  display: block; 
+  white-space: pre; 
+  overflow: auto;
+  word-wrap: normal; 
+  padding: 1em 0;
+
+  max-height: 20em;
+}
+
+/* Blue: Comments, Declarations,*/
+.c, .cm, .c1, .cs, .kd { color: #4be; }
+
+/* Green: Type Keywords, */
+.kt { color: #8c6; }
+
+/* Yellow: Keywords, Constants */
+.k, .kc { color: #db6; }
+
+/* Purple: Builtins, Numbers, Strings, Preprocessor Commands  */
+.nb, .m, .mf, .mh, .mi, .il, .mo, .s, .sb, .sc, .sd, .s2, .se, 
+.sh, .si, .sx, .sr, .s1, .ss, .ss, .cp { color: #d7d; }

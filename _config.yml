@@ -9,4 +9,8 @@ github_username: mkgh
 
 # Build settings
 markdown: redcarpet
-extensions: [fenced_code_blocks]
+jekyll-press:
+  exclude: 'atom.xml'
+  js_options: {}
+  css_options: {}
+  html_options: {}
