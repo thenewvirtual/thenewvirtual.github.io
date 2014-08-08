@@ -1,10 +1,5 @@
-/* copy right wtvr */
-
 ::selection { background: #c44; color: #ddd; }
 ::-moz-selection { background: #c44; color: #ddd; }
-
-*, *:before, *:after {
-}
 
 html {
   position: relative;
@@ -109,7 +104,7 @@ a.logo {
 a.logo:before {
   content: 'The New Virtual';
   background: #444;
-  opacity: .8;
+  opacity: .6;
 
   display: block;
   position: absolute;
@@ -214,3 +209,6 @@ code, pre { font-family: 'inconsolata', monospace; font-size: .9em; }
 /* Purple: Builtins, Numbers, Strings, Preprocessor Commands  */
 .nb, .m, .mf, .mh, .mi, .il, .mo, .s, .sb, .sc, .sd, .s2, .se, 
 .sh, .si, .sx, .sr, .s1, .ss, .ss, .cp { color: #d7d; }
+
+.postlist h1 { font-size: 1.6em; }
+.postlist h1 a { color: #444; }

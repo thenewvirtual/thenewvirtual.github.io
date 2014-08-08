@@ -1,25 +1,25 @@
 ---
 layout: default
 picture: index.jpg
-attr: '"<a href="https://flic.kr/p/bjRjQT">DB BY RYOJI IKEDA</a>", 
+attr: '"<a href="https://flic.kr/p/bnz4P5">[Metal Gear] Weapon Menu</a>", 
         <a href="https://creativecommons.org/licenses/by-nc-sa/2.0/">CC BY-NC-SA 2.0</a> by 
-        <a href="https://www.flickr.com/photos/67108116@N08/">Marija Kobler</a>'
+        <a href="http://lxtxcx.info/">Víctor Arce</a>'
 ---
 
 <header style="background-image: url({{page.picture}});">
   <span class="container">
-    <h1>A blog about culture, software, and video games. By 
-      <a href="http://distransient.ddns.net">Kel</a></h1>
+    <h1>A blog about culture, software, and video games.</h1>
     <p class="meta"><em>"Virtual means never knowing where your next byte is coming from" 
       - Unknown, BSD Fortune</em></p>
     {% if page.attr %}<small class="attr">{{page.attr}}</small>{% endif %}
   </span>
 </header>
 
-<article>
+<article class="postlist">
 {% for post in site.posts %}
-<time>{{ post.date | date: "%b %-d, %Y" }}</time>:
-<a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-<br/><br/>
+<h1><a href="{{post.url | prepend: site.baseurl}}">{{post.title}}</a></h1>
+<p>{% if post.description %}{{post.description}}{% endif %} 
+  <a href="{{post.url | prepend: site.baseurl}}">Read more</a>
+  <br/><br/>Written on <time>{{ post.date | date: "%b %-d, %Y" }}</time></p>
 {% endfor %}
 </article>
