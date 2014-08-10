@@ -10,7 +10,7 @@ permalink: /evolution.html
 
 The realm of game design is an academic nightmare. From the industrial nature of most commercial 
 games development, to the seemingly endless stream of exploitative video game trade schools, formal 
-understandings of game design seem to just evaporate into the endless ether of game dev turnover. 
+understandings of game design appear to just evaporate into the endless ether of game dev turnover. 
 From the same mouths ruthlessly laying off employees and silencing creativity in
 commercial game development studios, you might've heard rumor of the Dark Age of Games. 
 

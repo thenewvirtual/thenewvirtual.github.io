@@ -14,9 +14,33 @@
   <link href="{{site.baseurl}}/style.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
-  <a class="logo" href="{{site.baseurl}}/" 
-    {% if page.picture %}style="background-image: url({{page.picture}})"{% endif %}
-    >{{ site.title }}</a>
-  {{ content }}
+  <nav container>
+    <a class="logo" href="{{site.baseurl}}/" 
+      {% if page.picture %}style="background-image: url({{page.picture}})"{% endif %}
+      >{{ site.title }}</a>
+  </nav>
+  <header style="background-image: url({{page.picture}});">
+    <span container>
+      <h1>{{page.title}}</h1>
+      <p class="meta">
+        {% if page.date %} Posted on <time>{{ page.date | date:'%B %d, %Y' }}</time> 
+        {% elsif page.meta %}<em>{{ page.meta }}</em>
+        {% endif %}
+      </p>
+      {% if page.attr %}<small class="attr">{{page.attr}}</small>{% endif %}
+    </span>
+  </header>
+  <article container>
+    {{ content }}
+  </article>
+  <footer style="background-image: url({{page.picture}});">
+    <em container>
+      All writing, unless otherwise noted, is by <a href="http://distransient.ddns.net">Kel</a>
+      and is licensed under the <a href="http://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>
+      license. The source for this blog is licensed under 
+      <a href="http://opensource.org/licenses/MIT">The MIT License</a> and can be found 
+      <a href="https://github.com/mkgh/blog">here</a>. 
+    </em>
+  </footer>
 </body>
 </html>

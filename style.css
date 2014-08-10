@@ -14,12 +14,14 @@ html {
   text-transform: none;
 }
 
-body {
+body { margin: 0; }
+
+[container] {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   margin: 0 auto;
-  padding: 1em;
+  padding: 0 1em;
 
   max-width: 30em; 
 }
@@ -76,7 +78,7 @@ blockquote {
 
 /* Topbar logo */
 a.logo {
-  background: #444 no-repeat center center fixed;
+  background: #444 no-repeat top center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -91,6 +93,7 @@ a.logo {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   padding: .8em .6em .01em;
+  margin-top: 1em;
 
   -webkit-border-top-left-radius: .3em;
   -moz-border-top-left-radius: .3em;
@@ -135,38 +138,48 @@ a.logo:hover:before { opacity: 1; background: #d66; }
 
 /* Post headers */
 header { 
-  background: #444 no-repeat center center fixed;
+  background: #444 no-repeat top center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   color: #ddd;
+  text-align: center;
 
-  position: absolute; 
-  left: 0; 
-  width: 100%;
-  height: 23em; 
-
-  display: flex; 
-  align-items: flex-end;
-  justify-content: center;
+  display: block;
+  padding-top: 2em;
+  padding-bottom: 2em;
 }
 header h1 { border-bottom-color: #ddd; }
-header small.attr a { color: #ddd; }
-header small.attr { opacity: .8; }
-header small.attr:hover { opacity: 1; }
-header small.attr a:hover { color: #f88; }
-header > span.container {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  padding: 1em;
-
-  max-width: 30em; 
+header small.attr a, footer * a { color: #ddd; }
+header small.attr, footer * { opacity: .8; }
+header small.attr:hover, footer *:hover { opacity: 1; }
+header small.attr a:hover, footer * a:hover { color: #f88; }
+header > span[container] {
+  display: inline-block;
+  text-align: left;
+  padding-top: 6em;
 }
 
-/* extra space from header absolute positioning */
-article:before { content: " "; display: block; margin-top: 26em; }
+p { 
+  -webkit-hyphens: auto; 
+  -moz-hyphens: auto; 
+  -ms-hyphens: auto; 
+  hyphens: auto; 
+}
+
+footer { 
+  color: #ddd; 
+  background: #444 no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  padding-top: 2em; 
+  padding-bottom: 2em; 
+}
+footer > * { display: block; font-size: .8em; max-width: 37.5em !important; }
 
 code, pre { font-family: 'inconsolata', monospace; font-size: .9em; }
 
@@ -210,5 +223,7 @@ code, pre { font-family: 'inconsolata', monospace; font-size: .9em; }
 .nb, .m, .mf, .mh, .mi, .il, .mo, .s, .sb, .sc, .sd, .s2, .se, 
 .sh, .si, .sx, .sr, .s1, .ss, .ss, .cp { color: #d7d; }
 
-.postlist h1 { font-size: 1.6em; }
-.postlist h1 a { color: #444; }
+h1.listing { font-size: 1.4em; margin-bottom: -1.4em; }
+h1.listing a { color: #444; }
+p.description { font-style: italic; }
+p.description a { font-style: normal }
