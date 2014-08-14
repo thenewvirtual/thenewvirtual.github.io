@@ -151,10 +151,10 @@ header {
   padding-bottom: 2em;
 }
 header h1 { border-bottom-color: #ddd; }
-header small.attr a, footer * a { color: #ddd; }
-header small.attr, footer * { opacity: .8; }
-header small.attr:hover, footer *:hover { opacity: 1; }
-header small.attr a:hover, footer * a:hover { color: #f88; }
+header small.attr a { color: #ddd; }
+header small.attr { opacity: .8; }
+header small.attr:hover { opacity: 1; }
+header small.attr a:hover { color: #f88; }
 header > span[container] {
   display: inline-block;
   text-align: left;
@@ -169,17 +169,17 @@ p {
 }
 
 footer { 
-  color: #ddd; 
-  background: #444 no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  color: #222; 
+  background: #ccc;
 
   padding-top: 2em; 
   padding-bottom: 2em; 
 }
 footer > * { display: block; font-size: .8em; max-width: 37.5em !important; }
+footer [container] a { color: #c44; }
+footer [container] { opacity: .8; }
+footer [container]:hover { opacity: 1; }
+footer [container] a:hover { color: #e66; }
 
 code, pre { font-family: 'inconsolata', monospace; font-size: .9em; }
 
