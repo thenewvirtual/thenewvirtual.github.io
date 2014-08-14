@@ -2,8 +2,8 @@
 title: The New Virtual
 email: humanoidanalog@gmail.com
 description: "A blog by Michael about culture, technology, and games."
-baseurl: "/blog"
-url: "http://distransient.ddns.net"
+baseurl: "/"
+url: "http://thenewvirtual.com"
 
 # Build settings
 markdown: redcarpet
