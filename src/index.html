@@ -1,0 +1,19 @@
+---
+layout: default
+title: 'A blog about culture, software, and video games.'
+meta: 'foo bar bar bar'
+picture: index.jpg
+attr: '"<a href="https://flic.kr/p/bnz4P5">[Metal Gear] Weapon Menu</a>", 
+        <a href="https://creativecommons.org/licenses/by-nc-sa/2.0/">CC BY-NC-SA 2.0</a> by 
+        <a href="http://lxtxcx.info/">Víctor Arce</a>;<br/> scaled up and desaturated.'
+---
+
+{% for post in site.posts %}
+<h1 class="listing"><a href="{{post.url | prepend: site.baseurl}}">{{post.title}}</a></h1>
+<p class="description">
+  {% if post.description %}{{post.description}} - {% endif %} 
+  <a href="{{post.url | prepend: site.baseurl}}">Read more</a>
+  <br/><br/>
+  Written on <time>{{ post.date | date: "%b %-d, %Y" }}</time>
+</p>
+{% endfor %}
