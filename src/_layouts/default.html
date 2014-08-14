@@ -11,11 +11,11 @@
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link href="http://fonts.googleapis.com/css?family=Source+Serif+Pro" rel="stylesheet" type="text/css"/>
   <link href="http://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/>
-  <link href="{{site.baseurl}}/style.css" rel="stylesheet" type="text/css"/>
+  <link href="{{site.baseurl}}style.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
   <nav container>
-    <a class="logo" href="{{site.baseurl}}/" 
+    <a class="logo" href="{{site.baseurl}}" 
       {% if page.picture %}style="background-image: url({{page.picture}})"{% endif %}
       >{{ site.title }}</a>
   </nav>
